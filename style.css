@@ -1,0 +1,103 @@
+/* Import Statements */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body{
+    background-color: #FF7777;
+}
+
+/* For Score Section */
+
+.score{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.1vw solid #F2F2F2;
+    background-color: #182747;
+    color:#f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    text-align: center;
+}
+
+/* Code For Game Section */
+
+.game{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-color: #cccccc;
+    width: 45%;
+    height: 80%;
+    gap: 2%;
+    background-color: #000;
+}
+
+.box{
+    background-color: #554994;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: xxx-large;
+}
+
+.box:hover{
+    background-color: #675ca0;
+}
+
+.game > p{
+    padding-bottom: 1vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@keyframes letter{
+    from{
+        font-size: xx-small;
+    }
+    to{
+        font-size: xxx-large;
+    }
+}
+
+@keyframes winnerAni {
+    0%{
+        background-color: #702000;
+        color: whitesmoke;
+    }
+    25%{
+        background-color: #F27949;
+    }
+    50%{
+        background-color: #F04400;
+        color: black;
+    }
+    75%{
+        background-color: #703822;
+    }
+    100%{
+        background-color: #BD3700;
+    }
+}
