@@ -101,3 +101,15 @@ p{
         background-color: #BD3700;
     }
 }
+
+@media screen and (max-width : 500px) {
+    .main-grid{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .score{
+        font-size: 4vw;
+    }
+}
