@@ -128,8 +128,6 @@ p{
 
 progress{
     accent-color: #554994;
-    height: 5vh;
-    width: 25vw;
     cursor:not-allowed;
     pointer-events: none;
     margin: auto;
