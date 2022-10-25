@@ -20,7 +20,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 0.1vw solid #F2F2F2;
     background-color: #182747;
     color:#f2f2f2;
@@ -47,7 +46,6 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,1fr);
-    background-color: #cccccc;
     width: 45%;
     height: 80%;
     gap: 2%;
@@ -112,4 +110,31 @@ p{
     .score{
         font-size: 4vw;
     }
+}
+
+
+/* CODE FOR THINKER ANIMATION */
+
+.thinker{
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 15vh;
+    background-color: #FF7777;
+    left: 0;
+    height: 85vh;
+    width: 100vw;
+}
+
+progress{
+    accent-color: #554994;
+    height: 5vh;
+    width: 25vw;
+    cursor:not-allowed;
+    pointer-events: none;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
